@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site - PIS</title>
+</head>
+<body>
+    <h1>Site do Projeto de Inovção Social</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a id= "loginav" href="login.html">Login</a>
+        <a href="jogo.html">Jogo</a>
+        <!-- <div id="user-icon" class="user-icon" style="display: none;"></div> -->
+        <div class="user-container">
+            <!-- Ícone do usuário -->
+            <div id="user-icon" class="user-icon" style="display: none;" onclick="showLogout()">
+                <!-- Iniciais do usuário são inseridas aqui dinamicamente -->
+            </div>
+        
+            <!-- Contêiner do botão de logout -->
+            <div class="logout-container" id="logout-container">
+                <button class="logout-button" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+    <div class="sobre">
+        <h2>Sobre o Projeto</h2>
+            <p>A pergunta que gerou o nosso projeto foi a seguinte <strong>"Como que pessoas com deficiência e dificuldades cognitivas se enxergam no dia a dia?"</strong>
+                , este tema foi gerado a partir da conversação entre o grupo e de compreendimento da situação dessas pessoas, tendo um dos membros que sofre de TDAH 
+                (Transtorno do Déficit de Atenção/Hiperatividade). Com base nesse assunto, nosso objetivo neste projeto é concientizar sobre essa problemática, evidenciando
+                a prespectiva de tais indivíduos, "falando sobre a problemática". </p>
+            <p>O TDAH é uma condição neurobiológica que afeta crianças, adolescentes e adultos, e sua prevalência pode variar dependendo de diferentes fatores, 
+                incluindo região geográfica, acesso a cuidados de saúde e diagnóstico adequado. No entanto, dados específicos sobre a prevalência do TDAH em escolas 
+                públicas versus particulares podem ser mais difíceis de encontrar e podem depender da disponibilidade de recursos para diagnóstico e tratamento, 
+                bem como do acesso à educação especializada.</p>
+            <p>Algumas pesquisas sugerem que a prevalência do TDAH em escolas públicas pode ser maior devido a uma série de fatores, incluindo acesso limitado a 
+                cuidados de saúde e educação especializada. No entanto, é importante ressaltar que essas são apenas tendências e que a prevalência real pode variar 
+                significativamente de acordo com diferentes contextos locais e regionais.</p>
+            <p>Estimativas globais sugerem que o TDAH afeta entre 5% e 7% das crianças em idade escolar em todo o mundo. No entanto, é importante notar que essas 
+                estimativas podem variar de acordo com o critério de diagnóstico utilizado, bem como com fatores culturais e regionais. </p>
+    </div>
+    <br><br>
+    <script src="script_user.js"></script>
+</body>
+</html>

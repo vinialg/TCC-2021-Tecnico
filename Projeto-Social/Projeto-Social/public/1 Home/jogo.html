@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - PIS</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <h1>Site do Projeto de Inovção Social</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a id= "loginav" href="login.html">Login</a>
+        <a href="jogo.html">Jogo</a>
+           <!-- <div id="user-icon" class="user-icon" style="display: none;"></div> -->
+           <div class="user-container">
+            <!-- Ícone do usuário -->
+            <div id="user-icon" class="user-icon" style="display: none;" onclick="showLogout()">
+                <!-- Iniciais do usuário são inseridas aqui dinamicamente -->
+            </div>
+        
+            <!-- Contêiner do botão de logout -->
+            <div class="logout-container" id="logout-container">
+                <button class="logout-button" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="canvas">
+        <canvas height="500" width="800" id="canvas"></canvas><br>
+    </div>
+    <button id="startButton">Iniciar Jogo</button>
+    <script src="script.js"></script>
+    <script src="script_user.js"></script>
+</body>
+
+</html>

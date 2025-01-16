@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../0 Fontes/modern_dos/ModernDOS8x14.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pixel2';
+    src: url('../0 Fontes/modern_dos/ModernDOS8x14.ttf') format('truetype');
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-image: url("../0 Imagens/fundo.png");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Pixel';
+    text-align: center;
+    font-size: 50px;
+    color: rgb(245, 150, 150);
+}
+
+nav {
+    text-align: center;
+    display: flex;
+}
+  
+a {
+    padding: 10px;
+    font-family: 'Pixel2';
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(245, 150, 150);
+}
+
+a:hover{
+    color: white;
+}
+
+canvas {
+    background-color: #DEB887;
+    border: black solid 2px;
+    border-radius: 25px;
+}
+
+canvas:hover {
+    cursor: crosshair;
+}
+
+#startButton {
+    width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    border: white solid 3px;
+    color: rgb(245, 150, 150);
+    background-color: rgba(0,0,0,0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+#startButton:hover {
+    width: 450px;
+    height: 65px;
+    font-size: 25px;
+    border-radius: 50px;
+    background-color: rgba(84, 27, 138, 0.432);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.user-icon {
+    position: fixed;
+    top: 10px; 
+    right: 10px; 
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%; 
+    background-color: #4CAF50; 
+    color: white; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+}
+
+.user-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.user-icon {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logout-container {
+    display: none; 
+    position: absolute;
+    top: 50px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
